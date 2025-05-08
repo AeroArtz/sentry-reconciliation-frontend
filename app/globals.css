@@ -1,0 +1,294 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom font classes */
+.font-urbanist {
+  font-family: var(--font-urbanist, "Urbanist"), system-ui, sans-serif;
+}
+
+/* Custom text sizes */
+.text-h2 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.text-h3 {
+  font-size: 2.75rem;
+  line-height: 1.2;
+}
+
+.text-h4 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.text-h5 {
+  font-size: 1.75rem;
+  line-height: 1.4;
+}
+
+.text-h6 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.text-heading-h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.text-heading-h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.text-heading-h3 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.text-heading-h4 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.text-heading-h5 {
+  font-size: 1.75rem;
+  line-height: 1.4;
+}
+
+.text-heading-h6 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Custom rounded corners */
+.rounded-7xl {
+  border-radius: 2rem;
+}
+
+/* Custom colors */
+.bg-gold-300 {
+  background-color: #ffe500;
+}
+
+.bg-gold-500 {
+  background-color: #f3a407;
+}
+
+.bg-gold-600 {
+  background-color: #e09000;
+}
+
+.border-gold-300 {
+  border-color: #ffe500;
+}
+
+.border-gold-500 {
+  border-color: #f3a407;
+}
+
+.border-gold-600 {
+  border-color: #e09000;
+}
+
+.text-gold-500 {
+  color: #f3a407;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.75s ease backwards;
+}
+
+/* Custom spacing */
+.py-30 {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.mb-30 {
+  margin-bottom: 7.5rem;
+}
+
+.mb-26 {
+  margin-bottom: 6.5rem;
+}
+
+.mb-22 {
+  margin-bottom: 5.5rem;
+}
+
+.py-18 {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.pt-18 {
+  padding-top: 4.5rem;
+}
+
+.pb-18 {
+  padding-bottom: 4.5rem;
+}
+
+.pb-22 {
+  padding-bottom: 5.5rem;
+}
+
+.pt-22 {
+  padding-top: 5.5rem;
+}
+
+.pb-26 {
+  padding-bottom: 6.5rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pb-56 {
+  padding-bottom: 14rem;
+}
+
+.h-22 {
+  height: 5.5rem;
+}
+
+.w-22 {
+  width: 5.5rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+.xl\:mb-32 {
+  @media (min-width: 1280px) {
+    margin-bottom: 8rem;
+  }
+}
+
+.xl\:mb-30 {
+  @media (min-width: 1280px) {
+    margin-bottom: 7.5rem;
+  }
+}
+
+.xl\:mb-20 {
+  @media (min-width: 1280px) {
+    margin-bottom: 5rem;
+  }
+}
+
+.xl\:w-9\/12 {
+  @media (min-width: 1280px) {
+    width: 75%;
+  }
+}
+\
+.3
+xl\:w-7\/12 {
+  @media (min-width: 1920px) {
+    width: 58.333333%;
+  }
+}
+
+.3
+xl\:container {
+  @media (min-width: 1920px) {
+    max-width: 1920px;
+  }
+}
+
+.3
+xl\:mx-auto {
+  @media (min-width: 1920px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
