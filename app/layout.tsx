@@ -12,7 +12,7 @@ const urbanist = Urbanist({
 })
 
 export const metadata: Metadata = {
-  title: "BlackLine - Financial Operations Platform",
+  title: "Sentry's Reconciliation Partners - Financial Operations Platform",
   description: "Meet your future-ready financial operations platform.",
 }
 
