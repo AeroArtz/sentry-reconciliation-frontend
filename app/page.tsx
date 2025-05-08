@@ -351,7 +351,7 @@ export default function Home() {
       {/* Product Sections with Tabs */}
       <section className="relative">
         {/* Product Intro - Studio360 Platform */}
-        <div className="product-intro text-black" id="studio-360-platform">
+        <div className="product-intro text-black bg-gradient-to-r bg-linear-to-r from-yellow-600 via-yellow-400 to-yellow-300" id="studio-360-platform">
           <div className="px-6 pb-16 sm:px-8 sm:pt-16 sm:pb-18 md:pt-18 md:pb-22 lg:px-12 lg:pt-24 lg:pb-26 xl:px-16 3xl:container 3xl:mx-auto">
             <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-22 xl:mb-30">
               <div className="lg:hidden">
@@ -404,7 +404,7 @@ export default function Home() {
               <div className="lg:col-span-6 lg:order-2 3xl:col-start-8 3xl:col-span-5">
                 <div className="h-[220px] rounded-3xl overflow-hidden bg-black/20 mb-6 sm:h-[400px] sm:mb-10 md:h-[430px] md:w-9/12 lg:h-[320px] lg:w-full xl:h-[400px] 3xl:h-[410px]">
                   <Image
-                    src="/placeholder.svg?height=400&width=550"
+                    src="/placeholder.webp?height=400&width=550"
                     alt="Sentry's Reconciliation Partners Studio Platform"
                     width={550}
                     height={400}
@@ -452,7 +452,7 @@ export default function Home() {
 
         {/* Product Intro - Financial Close */}
         <div
-          className={`product-intro text-white bg-black ${activeTab === "financial-close" ? "block" : "hidden lg:block"}`}
+          className={`product-intro min-h-[200px] p-6 text-gray-800 bg-gradient-to-r from-purple-400 via-purple-300 to-pink-300 ${activeTab === "financial-close" ? "block" : "hidden lg:block"}`}
           id="financial-close"
         >
           <div className="px-6 pt-12 pb-16 sm:px-8 sm:pt-16 sm:pb-18 md:pt-18 md:pb-22 lg:px-12 lg:pt-24 lg:pb-26 xl:px-16 3xl:container 3xl:mx-auto">
@@ -507,7 +507,7 @@ export default function Home() {
               <div className="lg:col-span-6 lg:order-2 3xl:col-start-8 3xl:col-span-5">
                 <div className="h-[220px] rounded-3xl overflow-hidden bg-black/20 mb-6 sm:h-[400px] sm:mb-10 md:h-[430px] md:w-9/12 lg:h-[320px] lg:w-full xl:h-[400px] 3xl:h-[410px]">
                   <Image
-                    src="/placeholder.svg?height=400&width=550"
+                    src="/placeholder2.webp?height=400&width=550"
                     alt="Financial Close"
                     width={550}
                     height={400}
